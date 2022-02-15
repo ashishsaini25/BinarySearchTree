@@ -10,6 +10,7 @@ namespace BinaryTree
     public class BinarySearchTree
     {
         public Node root;
+        public int count = 0;
         public BinarySearchTree()
         {
             root = null;
@@ -17,6 +18,7 @@ namespace BinaryTree
 
         public void Add(int data)
         {
+            count++;
             if(root == null)
             {
                 root = new Node(data);
