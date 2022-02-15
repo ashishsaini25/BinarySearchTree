@@ -49,6 +49,18 @@ namespace BinaryTree
             }
 
         }
+        public bool Search(int data)
+        {
+            return SearchElement(data, root);
+        }
+        public bool SearchElement(int data,Node root)
+        {
+            if (root == null) return false;
+            if (root.Data == data) return true;
+            if (root.Data < data) return SearchElement(data, root.right);
+            else 
+                return SearchElement(data, root.left);
+        }
         private void DisplayTree(Node root)
         {
             if (root == null) return;

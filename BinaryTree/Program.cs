@@ -26,8 +26,15 @@ namespace BinaryTree
             searchTree.Add(65);
             searchTree.Add(63);
             searchTree.Add(67);
-            Console.WriteLine("The size of the binary search Tree :"+searchTree.count);
-            searchTree.Display();
+
+            if (searchTree.Search(63))
+            {
+                Console.WriteLine("It is present in our tree");
+            }
+            else
+            {
+                Console.WriteLine("It is not present in the list");
+            }
 
 
         }
